@@ -1,0 +1,14 @@
+{
+    "FOLDER_TO_WATCH": "C:/Users/dough/Downloads",
+    "DESTINATIONS": {
+        ".unitypackage": {
+            "Nardo": "C:/Users/dough/Documents/Unity Packages/Nardo",
+            "": "C:/Users/dough/Documents/Unity Packages/"
+        },
+        ".txt": {
+            "word1": "C:/Users/dough/Documents/Text Files/word1",
+            "word2": "C:/Users/dough/Documents/Text Files/word2"
+        }
+    },
+    "ICON_PATH": "icon.ico"
+}
