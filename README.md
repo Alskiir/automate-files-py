@@ -18,18 +18,18 @@ pip install PyQt5 watchdog
 
 By default, the script watches the `C:/Users/dough/Downloads` directory and moves any new `.unitypackage` files to `C:/Users/dough/Documents/Unity Packages` and `.txt` files to `C:/Users/dough/Documents/Text Files`.
 
-Update the `FOLDER_TO_WATCH` and `DESTINATIONS` variables in the script to match your source and destination directories.
+Update the `FOLDER_TO_WATCH` and `DESTINATIONS` variables `config.json` to match your source and destination directories.
 ```bash
-FOLDER_TO_WATCH = Path("your/directory/to/watch/for/files")
-DESTINATIONS = {
+"FOLDER_TO_WATCH": "C:/Users/dough/Downloads",
+"DESTINATIONS": {
     ".unitypackage": {
         "word": "your/destination/directory/for/unitypackage/files",
-        "": "your/destination/directory/for/unitypackagefiles",
+       "": "your/destination/directory/for/unitypackagefiles"
     },
     ".txt": {
         "word1": "your/destination/directory/for/text/files",
-        "": "your/destination/directory/for/textfiles",
-    },
+        "": "your/destination/directory/for/textfiles"
+    }
     # Add more file extensions and destinations as needed
 }
 ```
@@ -37,7 +37,7 @@ DESTINATIONS = {
 To run the script, use the following command:
 
 ```bash
-python automate-files.py
+python main.py
 ```
 
 ## Additional Notes
